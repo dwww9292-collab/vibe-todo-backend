@@ -18,7 +18,8 @@ const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
 
 // 미들웨어
-app.use(cors({ origin: "http://localhost:5173" }));
+//app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "http://localhost:5175" }));
 app.use(express.json());
 
 // 기본 라우트
